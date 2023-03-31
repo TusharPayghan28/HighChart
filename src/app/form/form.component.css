@@ -1,0 +1,26 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  } 
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    text-align: center;
+    background-color: rgb(192, 238, 238);
+    padding: 40px;
+  }
+
+  button{
+    width: 100%;
+  }

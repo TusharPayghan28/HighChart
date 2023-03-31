@@ -1,0 +1,54 @@
+<div class="container">
+    <form class="example-form" [formGroup]="chart">
+
+        <h1>Create New Chart</h1>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Chart Type</mat-label>
+          <input matInput placeholder="Ex. pie" value="pie" formControlName="ctype">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Background Color</mat-label>
+            <input matInput placeholder="Ex. rgb(247, 223, 237)" value="rgb(247, 223, 237)" formControlName="bgcolor">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Ex. Line chart" value="Line chart" formControlName="title">
+          </mat-form-field>
+
+         
+        <mat-form-field class="example-full-width">
+          <mat-label>xAxis Categories</mat-label>
+          <textarea matInput placeholder="Ex. '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'," formControlName="xAxis"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>yAxis Categories</mat-label>
+            <textarea matInput placeholder="Ex. '20', '40', '60', '80', '100',  '120'," formControlName="yAxis"></textarea>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>yAxis Title</mat-label>
+            <input matInput placeholder="Ex. Sample values" value="Sample values" formControlName="ytitle">
+          </mat-form-field>
+      
+          <mat-form-field class="example-full-width">
+            <mat-label>Series Name</mat-label>
+            <input matInput placeholder="Ex. India" value="Sushi" formControlName="sname">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Series Type</mat-label>
+            <input matInput placeholder="Ex. pie" value="Sushi" formControlName="stype">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Series Data</mat-label>
+            <textarea matInput placeholder="Ex. 10, 18, 27, 33,44, 54, 60, 67,74, 82," formControlName="sdata"></textarea>
+          </mat-form-field>
+
+          <button mat-raised-button color="accent" (click)="openChart()">Create Chart</button>
+      </form>
+</div>
